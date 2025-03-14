@@ -6,7 +6,7 @@ const Review = require('../models/review');
 const Campground = require('../models/campground');
 
 
-const catchasync = require('../utils/catchAsync');
+const catchasync = require('../utils/catchasync');
 
 const { isloggedin } = require('../middleware/middlewares');
 const { isreviewauthor } = require('../middleware/middlewares');
