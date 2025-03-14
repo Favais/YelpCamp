@@ -23,7 +23,7 @@ const userroutes = require('./routes/users');
 const campgroundsroutes = require('./routes/campground');
 const reviewroutes = require('./routes/reviews');
 const MongoStore = require('connect-mongo');
-const dbUrl = 'mongodb://localhost:27017/yelpcamp'
+const dbUrl = 'process.env.DB_url'
 
 mongoose.connect(dbUrl);
 
