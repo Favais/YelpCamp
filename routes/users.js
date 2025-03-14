@@ -1,13 +1,13 @@
 const express = require('express');
 const router = express.Router();
-const catchAsync = require('../utils/catchAsync');
+const catchAsync = require('../utils/catchasync');
 const passport = require('passport');
 const { storeReturnTo } = require('../middleware/middlewares');
 const users = require('../controllers/users');
 
 router.route('/register')
     .get(users.renderRegister)
-    .post(catchAsync(users.registerUser))
+    .post(catchasync(users.registerUser))
 
 router.route('/login')
     .get(storeReturnTo, users.renderLogin)
